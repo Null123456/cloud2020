@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
 public class ConfigClientMain3355 {
-    //ssk author   gsdghsh  123
+    //ssk author   gsdghsh  123456
     public static void main(String[] args) {
         SpringApplication.run(ConfigClientMain3355.class,args);
     }
