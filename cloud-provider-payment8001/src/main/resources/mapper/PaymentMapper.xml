@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<!--namespace为全限定名，使用该映射文件中配置的已映射的sql语句时，最好加上全限定名，不然可能会造成语句模糊。-->
+<mapper namespace="com.atguigu.springcloud.dao.PaymentDao">
+    <insert id="create" parameterType="com.atguigu.springcloud.entities.Payment" useGeneratedKeys="true" keyProperty="id">
+        insert into payment (servial) values (#{servial});
+    </insert>
+
+    <select id="getPaymentById" parameterType="Long" resultType="com.atguigu.springcloud.entities.Payment">
+        select id,servial from payment where id = #{id};
+    </select>
+
+</mapper>
